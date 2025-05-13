@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - Minecraft Portfolio</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="icon" href="images/icon2.png">
+</head>
+
+<body>
+    <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <form onsubmit="handleSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" onclick="playClick()">Send Message</button>
+        </form>
+
+        <a class="back-button" href="selection.html" onclick="playClick()">← Back to Selection</a>
+    </div>
+
+    <script>
+        function playClick() {
+            const clickSound = document.getElementById("click-sound");
+            if (clickSound) {
+                clickSound.currentTime = 0;
+                clickSound.play();
+            }
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            playClick();
+            alert("Message sent (not really — you'd need a backend for that 😄)");
+        }
+    </script>
+</body>
+
+</html>

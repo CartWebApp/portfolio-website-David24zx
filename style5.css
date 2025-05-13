@@ -1,0 +1,67 @@
+
+body {
+    background-image: url('images/dirt.png');
+}
+
+
+
+
+.skills-section {
+  font-family: 'Minecraftia', sans-serif; /* Use a Minecraft-styled font */
+  color: #fff;
+  background: url('/images/stone-bg.png'); /* Add a stone or dirt texture background */
+  padding: 2rem;
+}
+
+h2, h3 {
+  color: white;
+}
+
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.skill {
+  margin: 0.5rem 0;
+}
+
+.xp-bar {
+  background-color: #3e3e3e;
+  border: 2px solid #5a5a5a;
+  border-radius: 4px;
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.xp-fill {
+  background: linear-gradient(to right, #00ff00, #009900);
+  height: 100%;
+}
+
+.tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted #fff;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 0;
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}

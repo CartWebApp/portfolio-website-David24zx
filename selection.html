@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select World</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="images/icon2.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select World</h1>
+
+        <div class="world-list">
+            <div class="world selected" data-target="aboutme.html">
+                <img src="images/icon.jpg" class="thumbnail">
+                <div class="world-info">
+                    <h2>About me</h2>
+                    <p>New World (1) (13/07/2022, 1:31 pm)</p>
+                    <p>Creative Mode, Cheats, Version: 1.19</p>
+                </div>
+            </div>
+
+            <div class="world" data-target="projects.html">
+                <img src="images/icon.jpg" class="thumbnail">
+                <div class="world-info">
+                    <h2>Projects</h2>
+                    <p>New World (13/07/2022, 1:30 pm)</p>
+                    <p>Survival Mode, Version: 1.19</p>
+                </div>
+            </div>
+
+
+            <div class="world" data-target="skills.html">
+                <img src="images/icon.jpg" class="thumbnail">
+                <div class="world-info">
+                    <h2>Skills</h2>
+                    <p>New World (13/07/2022, 1:30 pm)</p>
+                    <p>Survival Mode, Version: 1.19</p>
+                </div>
+            </div>
+
+
+            <div class="world" data-target="contact.html">
+                <img src="images/icon.jpg" class="thumbnail">
+                <div class="world-info">
+                    <h2>Contact</h2>
+                    <p>New World (13/07/2022, 1:30 pm)</p>
+                    <p>Survival Mode, Version: 1.19</p>
+                </div>
+            </div>
+
+            <!-- <div class="world" data-target="world2.html">
+                <img src="images/icon.png" class="thumbnail">
+                <div class="world-info">
+                    <h2>New World</h2>
+                    <p>New World (13/07/2022, 1:30 pm)</p>
+                    <p>Survival Mode, Version: 1.19</p>
+                </div>
+            </div>
+
+
+            <div class="world" data-target="world2.html">
+                <img src="images/icon.png" class="thumbnail">
+                <div class="world-info">
+                    <h2>New World</h2>
+                    <p>New World (13/07/2022, 1:30 pm)</p>
+                    <p>Survival Mode, Version: 1.19</p>
+                </div>
+            </div>
+
+ -->
+
+        </div>
+
+        <div class="buttons">
+            <button onclick="playWorld()">Play Selected World</button>
+            <button>Create New World</button>
+            <button>Edit</button>
+            <button>Delete</button>
+            <button>Re-Create</button>
+            <button onclick="window.location.href='index.html'">Cancel</button>
+        </div>
+
+        <div id="loading-screen">
+            <img src="images/loading.webp" alt="Loading...">
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+
+    <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+    <script src="script3.js"></script>
+    <script>
+        attachClickSoundToAll(); // Auto attach sounds to clickable elements
+    </script>
+
+</body>
+</html>
